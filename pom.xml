@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.alipay.sofa</groupId>
+        <artifactId>sofaboot-dependencies</artifactId>
+        <version>3.1.5</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <groupId>cn.net.liaowei</groupId>
+    <artifactId>sc-parent-rpc</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>sc-parent-rpc</name>
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <druid-spring-boot-starter.version>1.1.10</druid-spring-boot-starter.version>
+        <swagger-spring-boot-starter.version>1.9.0.RELEASE</swagger-spring-boot-starter.version>
+        <bolt.version>1.5.2</bolt.version>
+        <sofa-rpc-all.version>5.6.0</sofa-rpc-all.version>
+        <consul-api.version>1.4.2</consul-api.version>
+        <sc-product-rpc-common.version>0.0.1-SNAPSHOT</sc-product-rpc-common.version>
+        <sc-product-rpc-client.version>0.0.1-SNAPSHOT</sc-product-rpc-client.version>
+        <sc-order-rpc-common.version>0.0.1-SNAPSHOT</sc-order-rpc-common.version>
+        <sc-order-rpc-client.version>0.0.1-SNAPSHOT</sc-order-rpc-client.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.spring4all</groupId>
+                <artifactId>swagger-spring-boot-starter</artifactId>
+                <version>${swagger-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alipay.sofa</groupId>
+                <artifactId>bolt</artifactId>
+                <version>${bolt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alipay.sofa</groupId>
+                <artifactId>sofa-rpc-all</artifactId>
+                <version>${sofa-rpc-all.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ecwid.consul</groupId>
+                <artifactId>consul-api</artifactId>
+                <version>${consul-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.net.liaowei</groupId>
+                <artifactId>sc-product-rpc-common</artifactId>
+                <version>${sc-product-rpc-common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.net.liaowei</groupId>
+                <artifactId>sc-product-rpc-client</artifactId>
+                <version>${sc-product-rpc-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.net.liaowei</groupId>
+                <artifactId>sc-order-rpc-common</artifactId>
+                <version>${sc-order-rpc-common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.net.liaowei</groupId>
+                <artifactId>sc-order-rpc-client</artifactId>
+                <version>${sc-order-rpc-client.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
